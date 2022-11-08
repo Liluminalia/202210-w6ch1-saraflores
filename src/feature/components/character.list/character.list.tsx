@@ -1,6 +1,20 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { rootState } from '../../../infrastructure/store/store';
 import { characters } from '../../data/characters';
+import { characterStatus } from '../../models/data';
+import * as ac from '../../reducer/action.creators';
 
 export function CharacterList() {
+    const char= useSelector((state: rootState) => state.characters);
+    const dispatcher = useDispatch();
+    useEffect(() => {
+        dispatcher(
+            ac.updateActionCreator(char,
+                {(characters as characterStatus).lifeStatus:false}
+            )
+        );
+    }, [dispatcher]);
     return (
         <>
             <div className="app container">

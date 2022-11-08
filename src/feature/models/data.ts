@@ -10,3 +10,7 @@ export type character = {
     series: string;
     rol: string;
 };
+export type characterStatus = {
+    id: number;
+    lifeStatus: boolean;
+};
