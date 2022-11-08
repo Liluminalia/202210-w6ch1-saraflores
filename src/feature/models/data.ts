@@ -6,4 +6,7 @@ export type character = {
     lifeStatus: boolean;
     message: string;
     image: string;
+    partner: string;
+    series: string;
+    rol: string;
 };
