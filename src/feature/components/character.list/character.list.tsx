@@ -16,6 +16,7 @@ export function CharacterList() {
                                     }
                                     alt={`${item.name}  ${item.family}`}
                                     className="character__picture card-img-top"
+                                    height={300}
                                 />
                                 <div className="card-body">
                                     <h2 className="character__name card-title h4">
