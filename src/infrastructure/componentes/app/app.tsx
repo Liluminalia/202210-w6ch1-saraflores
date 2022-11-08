@@ -1,4 +1,4 @@
-import { Form } from '../../../feature/components/form';
+import { Form } from '../../../feature/components/form/form';
 import './app.css';
 
 export function App() {
