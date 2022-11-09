@@ -54,8 +54,7 @@
     "jest": {
         "coveragePathIgnorePatterns": [
             "<rootDir>/src/reportWebVitals.ts",
-            "<rootDir>/src/index.ts",
-            "<rootDir>/src/infrastructure/store/store.ts"
+            "<rootDir>/src/index.ts"
         ]
     },
     "browserslist": {
